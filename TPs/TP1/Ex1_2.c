@@ -1,6 +1,13 @@
 #include <stdlib.h>
 
-int main(int argc, char * argv[] )
+int main()
+{
+    affiche(ls)
+}
+
+return 0;
+
+int affiche(int argc, char * argv[] )
 {
     int i;
     for (i=0, i<argc, i++);
@@ -8,4 +15,3 @@ int main(int argc, char * argv[] )
         printf("%s\n" argv[i]);   
     }
 }
-return 0;
