@@ -1,0 +1,52 @@
+Ex 1
+1: même méthode que cours
+
+2:
+
+3: fork
+pere print
+fils print
+fils se termine en envoyant code
+pere se termine en envoyant code
+
+oui, le wait permet la synchornicité
+
+Ex 2
+fork
+fils ls -al
+fils termine
+pere date
+pere termine
+
+modifié:
+fork
+pere wait
+fils ls -al
+fils termine et envoie code a pere
+pere reactive
+pere date
+pere termine
+
+
+Ex 3:main paramétré avec le nombre de commandes qui lui sont passé
+boucle avec le nombre de commande
+pour chaque boucle:
+fork
+
+pere print le PID du fils exécutant la commande
+pere wait
+fils éxecute commande n°i dans la liste de commande passés
+fils print
+fils se termine et envoie un code à père
+pere se réveille
+pere print PID fils terminé
+incrémentation de i
+
+
+version modifié avec tous fils créés simultanément:
+
+main paramétré avec le nombre de commandes qui lui sont passé
+boucle avec le nombre de commande pour faire suffisamment de fork
+pere wait
+
+
